@@ -5,7 +5,8 @@ app.use(express.urlencoded({extended:true}))// parse URL-encode bodies using que
 const PORT=3000;
 const errorLogger=require('./src/utilities/errorlogger');
 const requestLogger=require('./src/utilities/requestlogger');
-
+const cors = require('cors')
+app.use(cors())
 const fileupload = require('express-fileupload');
 const router=require('./src/routes/routing')
 app.use(fileupload());

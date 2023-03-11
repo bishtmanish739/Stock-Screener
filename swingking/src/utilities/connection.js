@@ -7,7 +7,12 @@ const url='mongodb://127.0.0.1:27017/SwingKing';
             type:String
            
         },
-        stockHistory:[]
+        stockHistory:[],
+        todayDeliveryPer:{type:Number},
+        avgDeliveryPer30days:{type:Number},
+        todayVolume:{type:Number},
+        avgVolume30Days:{type:Number},
+
        
         
     },
